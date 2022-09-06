@@ -1,0 +1,52 @@
+,Model,Details,Root Mean Squared Error (RMSE),R-squared (training),R-squared (test),5-Fold Cross Validation
+0,Voting Regressor,"HisGradBoost, GradBoost, Adaboost",113477.932,0.967,0.9,0.887
+1,HisGradientBoosting,"max_depth=15, lr=0.1",113107.212,0.93,0.9,0.881
+2,HisGradientBoosting,"max_depth=20, lr=0.1",113979.922,0.929,0.899,0.881
+3,HisGradientBoosting,"max_depth=10, lr=0.1",115124.322,0.925,0.897,0.88
+4,GradientBoosting,"n_estimators = 100, max_depth=10, lr=0.1",117638.237,0.992,0.892,0.88
+5,GradientBoosting,"n_estimators = 50, max_depth=10, lr=0.1",118728.642,0.986,0.89,0.879
+6,HisGradientBoosting,"max_depth=5, lr=0.1",116018.175,0.915,0.895,0.876
+7,Stacking Regressor,"Histogram Gradient Boosting, Gradient Boosting, Ada Boosting",119631.369,0.937,0.889,0.873
+8,GradientBoosting,"n_estimators = 20, max_depth=10, lr=0.1",130494.215,0.952,0.867,0.858
+9,Ada boost with Decision Tree,"n_estimators = 50, max_depth=10, min_split=100,min_leaf=50",129939.704,0.935,0.859,0.852
+10,Ada boost with Decision Tree,"n_estimators = 100, max_depth=10, min_split=100,min_leaf=50",134701.112,0.928,0.859,0.843
+11,Ada boost with Decision Tree,"n_estimators = 200, max_depth=10, min_split=100,min_leaf=50",135983.305,0.925,0.856,0.841
+12,Stacking Regressor,"Decision Tree, Lasso, Ridge, Random Forest",134354.58,0.876,0.859,0.841
+13,Random Forest,"n_estimators = 50, max_depth=10,min_split=10,min_leaf=10",134199.352,0.886,0.86,0.837
+14,Random Forest,"n_estimators = 100, max_depth=15,min_split=20,min_leaf=15",133992.252,0.879,0.86,0.835
+15,Ada boost with Decision Tree,"n_estimators = 10, max_depth=10, min_split=100,min_leaf=50",133266.381,0.918,0.862,0.834
+16,Random Forest,"n_estimators = 200, max_depth=20,min_split=40,min_leaf=20",137829.524,0.862,0.852,0.823
+17,Polynomial Regression,"degree=2, all features, no preprocessing",151162.609,0.83,0.822,0.813
+18,Voting Regressor,"Decision Tree, Lasso, Ridge, Random Forest",146622.328,0.838,0.833,0.811
+19,Polynomial Ridge Regression,"alpha=50000, degree=2, all features",172246.927,0.763,0.769,0.791
+20,Polynomial Lasso Regression,"alpha=50000, degree=2, all features",181055.236,0.736,0.745,0.779
+21,Polynomial Lasso Regression,"alpha=1, degree=2, all features",166201.834,0.807,0.785,0.778
+22,Decision Tree,"max_depth=10,min_split=20,min_leaf=15",151304.117,0.845,0.822,0.774
+23,Decision Tree,"max_depth=15,min_split=40,min_leaf=20 ",158209.28,0.847,0.805,0.77
+24,GradientBoosting,"n_estimators = 10, max_depth=10, lr=0.1",174042.332,0.829,0.764,0.755
+25,Random Forest,"n_estimators = 10,max_depth=5,min_split=5,min_leaf=5",166256.74,0.795,0.495,0.754
+26,Polynomial Regression,"degree=2, selected features, no preprocessing",190533.483,0.731,0.717,0.714
+27,Multiple Regression-4,selected features,191879.55,0.701,0.713,0.698
+28,Multiple Regression-3,selected features,193693.989,0.698,0.708,0.695
+29,Decision Tree,"max_depth=5,min_split=10,min_leaf=10",191155.522,0.74,0.715,0.685
+30,Multiple Regression-2,selected features,209712.753,0.652,0.657,0.648
+31,Polynomial Regression,"degree=3, selected features, no preprocessing",200661.639,0.749,0.686,0.517
+32,Lasso Regression,"alpha=100, all features",248513.614,0.514,0.519,0.512
+33,Ridge Regression,"alpha=1000, all features",249125.064,0.51,0.516,0.512
+34,Multiple Regression-1,selected features,248514.011,0.514,0.519,0.512
+35,Ridge Regression,"alpha=1, all features",248513.385,0.514,0.519,0.512
+36,Lasso Regression,"alpha=1000, all features",248527.993,0.514,0.519,0.512
+37,Ridge Regression,"alpha=100, all features",248468.579,0.514,0.519,0.512
+38,Lasso Regression,"alpha=1, all features",248514.005,0.514,0.519,0.512
+39,MLP Regressor,default,354802.67,0.018,0.019,0.511
+40,KNN,"n=10, all features",172141.222,0.813,0.769,0.5
+41,KNN,"n=20, all features",177981.418,0.773,0.753,0.492
+42,Simple Linear Regression,Square Feet Living,248879.061,0.496,0.479,0.491
+43,KNN,"n=30, all features",184260.607,0.749,0.735,0.483
+44,Decision Tree,"max_depth=2,min_split=5,min_leaf=5",254578.448,0.498,0.495,0.483
+45,Linear SVR,"c=100, all features",441775.367,-0.491,-0.52,0.285
+46,Linear SVR,"c=10, all features",463053.809,-0.629,-0.67,0.238
+47,Polynomial Regression,"degree=3, all features, no preprocessing",301312.009,0.876,0.293,0.204
+48,Linear SVR,"c=1000, all features",366575.682,-0.045,-0.047,0.125
+49,Polynomial Ridge Regression,"alpha=1, degree=2, all features",150447.459,0.837,0.824,-3198.424
+50,Polynomial Regression,"degree=2, all features",561361.121,0.841,-1.455,-16909.596

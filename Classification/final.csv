@@ -1,0 +1,324 @@
+,Model,Scaling Method,Sampling Method,Details,Accuracy,Recall,Precision,F1 Score,5-Fold Cross Validation
+0,StackingClassifier,Normalization,RandomOverSampler,"Gradient, Ada, RandomForest",0.904,0.904,0.908,0.894,0.997
+1,StackingClassifier,Standardization,RandomOverSampler,"Gradient, Ada, RandomForest",0.899,0.899,0.902,0.889,0.997
+2,AdaBoostClassifier,Standardization,RandomOverSampler,"n_estimators=10, max_depth=10",0.941,0.941,0.941,0.941,0.993
+3,HistGradientBoostingClassifier,Normalization,RandomOverSampler,"max_depth=10, learning_rate=0.1",0.944,0.944,0.943,0.943,0.992
+4,HistGradientBoostingClassifier,Normalization,RandomOverSampler,"max_depth=15, learning_rate=0.1",0.944,0.944,0.943,0.943,0.992
+5,HistGradientBoostingClassifier,Normalization,RandomOverSampler,"max_depth=20, learning_rate=0.1",0.946,0.946,0.946,0.946,0.992
+6,AdaBoostClassifier,Normalization,RandomOverSampler,"n_estimators=20, max_depth=20",0.939,0.939,0.937,0.937,0.992
+7,HistGradientBoostingClassifier,Standardization,RandomOverSampler,"max_depth=20, learning_rate=0.1",0.946,0.946,0.946,0.946,0.992
+8,HistGradientBoostingClassifier,Standardization,RandomOverSampler,"max_depth=15, learning_rate=0.1",0.944,0.944,0.943,0.943,0.992
+9,HistGradientBoostingClassifier,Standardization,RandomOverSampler,"max_depth=10, learning_rate=0.1",0.944,0.944,0.943,0.943,0.992
+10,AdaBoostClassifier,Normalization,RandomOverSampler,"n_estimators=10, max_depth=10",0.925,0.925,0.923,0.924,0.991
+11,HistGradientBoostingClassifier,Standardization,RandomOverSampler,"max_depth=5, learning_rate=0.1",0.955,0.955,0.955,0.955,0.991
+12,AdaBoostClassifier,Normalization,RandomOverSampler,"n_estimators=15, max_depth=15",0.934,0.934,0.933,0.933,0.991
+13,HistGradientBoostingClassifier,Normalization,RandomOverSampler,"max_depth=5, learning_rate=0.1",0.955,0.955,0.955,0.955,0.991
+14,VotingClassifier,Normalization,RandomOverSampler,Soft,0.951,0.951,0.95,0.951,0.99
+15,AdaBoostClassifier,Standardization,RandomOverSampler,"n_estimators=20, max_depth=20",0.946,0.946,0.944,0.944,0.99
+16,VotingClassifier,Standardization,RandomOverSampler,Soft,0.948,0.948,0.948,0.948,0.99
+17,Random Forest,Normalization,RandomOverSampler,max_depth=20,0.937,0.937,0.935,0.936,0.989
+18,AdaBoostClassifier,Standardization,RandomOverSampler,"n_estimators=15, max_depth=15",0.934,0.934,0.932,0.932,0.989
+19,VotingClassifier,Standardization,RandomOverSampler,Hard,0.951,0.951,0.95,0.951,0.989
+20,Random Forest,Standardization,RandomOverSampler,max_depth=20,0.932,0.932,0.931,0.931,0.989
+21,VotingClassifier,Normalization,RandomOverSampler,Hard,0.951,0.951,0.95,0.951,0.989
+22,Random Forest,Normalization,RandomOverSampler,max_depth=15,0.932,0.932,0.931,0.932,0.988
+23,Random Forest,Standardization,RandomOverSampler,max_depth=15,0.932,0.932,0.931,0.931,0.988
+24,Random Forest,Normalization,RandomOverSampler,max_depth=5,0.93,0.93,0.931,0.93,0.987
+25,Random Forest,Normalization,RandomOverSampler,max_depth=10,0.927,0.927,0.927,0.927,0.987
+26,Random Forest,Standardization,RandomOverSampler,max_depth=5,0.93,0.93,0.931,0.93,0.986
+27,Random Forest,Standardization,RandomOverSampler,max_depth=10,0.923,0.923,0.921,0.921,0.986
+28,Decision Tree,Normalization,RandomOverSampler,max_depth=20,0.915,0.915,0.916,0.915,0.984
+29,HistGradientBoostingClassifier,Normalization,SmoteSampler,"max_depth=20, learning_rate=0.1",0.941,0.941,0.941,0.941,0.984
+30,HistGradientBoostingClassifier,Normalization,SmoteSampler,"max_depth=15, learning_rate=0.1",0.941,0.941,0.941,0.941,0.984
+31,HistGradientBoostingClassifier,Normalization,SmoteSampler,"max_depth=10, learning_rate=0.1",0.937,0.937,0.936,0.936,0.984
+32,HistGradientBoostingClassifier,Standardization,SmoteSampler,"max_depth=20, learning_rate=0.1",0.941,0.941,0.941,0.941,0.984
+33,HistGradientBoostingClassifier,Standardization,SmoteSampler,"max_depth=15, learning_rate=0.1",0.941,0.941,0.941,0.941,0.984
+34,HistGradientBoostingClassifier,Standardization,SmoteSampler,"max_depth=10, learning_rate=0.1",0.937,0.937,0.936,0.936,0.984
+35,Decision Tree,Normalization,RandomOverSampler,max_depth=15,0.913,0.913,0.915,0.914,0.983
+36,Decision Tree,Standardization,RandomOverSampler,max_depth=15,0.897,0.897,0.899,0.898,0.982
+37,HistGradientBoostingClassifier,Standardization,SmoteSampler,"max_depth=5, learning_rate=0.1",0.946,0.946,0.944,0.945,0.982
+38,HistGradientBoostingClassifier,Normalization,SmoteSampler,"max_depth=5, learning_rate=0.1",0.946,0.946,0.944,0.945,0.982
+39,Decision Tree,Standardization,RandomOverSampler,max_depth=20,0.911,0.911,0.911,0.911,0.981
+40,VotingClassifier,Normalization,SmoteSampler,Hard,0.941,0.941,0.941,0.941,0.981
+41,StackingClassifier,Standardization,SmoteSampler,"Gradient, Ada, RandomForest",0.934,0.934,0.932,0.933,0.98
+42,VotingClassifier,Standardization,SmoteSampler,Soft,0.941,0.941,0.941,0.941,0.98
+43,VotingClassifier,Standardization,SmoteSampler,Hard,0.941,0.941,0.941,0.941,0.979
+44,Random Forest,Standardization,SmoteSampler,max_depth=20,0.939,0.939,0.939,0.939,0.978
+45,Random Forest,Normalization,SmoteSampler,max_depth=20,0.939,0.939,0.939,0.939,0.978
+46,AdaBoostClassifier,Normalization,SmoteSampler,"n_estimators=10, max_depth=10",0.925,0.925,0.922,0.923,0.978
+47,StackingClassifier,Normalization,SmoteSampler,"Gradient, Ada, RandomForest",0.937,0.937,0.936,0.936,0.978
+48,VotingClassifier,Normalization,SmoteSampler,Soft,0.946,0.946,0.945,0.945,0.978
+49,Random Forest,Standardization,SmoteSampler,max_depth=15,0.937,0.937,0.936,0.936,0.977
+50,AdaBoostClassifier,Standardization,SmoteSampler,"n_estimators=10, max_depth=10",0.923,0.923,0.922,0.922,0.977
+51,HistGradientBoostingClassifier,Standardization,AdasynSampler,"max_depth=15, learning_rate=0.1",0.937,0.937,0.936,0.936,0.977
+52,HistGradientBoostingClassifier,Normalization,AdasynSampler,"max_depth=15, learning_rate=0.1",0.937,0.937,0.936,0.936,0.977
+53,Random Forest,Normalization,SmoteSampler,max_depth=15,0.937,0.937,0.936,0.936,0.977
+54,HistGradientBoostingClassifier,Standardization,AdasynSampler,"max_depth=20, learning_rate=0.1",0.939,0.939,0.938,0.939,0.976
+55,HistGradientBoostingClassifier,Normalization,AdasynSampler,"max_depth=20, learning_rate=0.1",0.939,0.939,0.938,0.939,0.976
+56,HistGradientBoostingClassifier,Standardization,AdasynSampler,"max_depth=10, learning_rate=0.1",0.939,0.939,0.938,0.939,0.975
+57,Decision Tree,Normalization,RandomOverSampler,max_depth=10,0.897,0.897,0.908,0.901,0.975
+58,HistGradientBoostingClassifier,Normalization,AdasynSampler,"max_depth=10, learning_rate=0.1",0.939,0.939,0.938,0.939,0.975
+59,Decision Tree,Standardization,RandomOverSampler,max_depth=10,0.897,0.897,0.909,0.901,0.975
+60,Random Forest,Normalization,SmoteSampler,max_depth=10,0.92,0.92,0.921,0.921,0.974
+61,Random Forest,Standardization,SmoteSampler,max_depth=10,0.92,0.92,0.921,0.921,0.974
+62,HistGradientBoostingClassifier,Normalization,AdasynSampler,"max_depth=5, learning_rate=0.1",0.939,0.939,0.938,0.939,0.973
+63,HistGradientBoostingClassifier,Standardization,AdasynSampler,"max_depth=5, learning_rate=0.1",0.939,0.939,0.938,0.939,0.973
+64,AdaBoostClassifier,Normalization,AdasynSampler,"n_estimators=10, max_depth=10",0.953,0.953,0.952,0.952,0.971
+65,StackingClassifier,Normalization,AdasynSampler,"Gradient, Ada, RandomForest",0.932,0.932,0.93,0.93,0.969
+66,Random Forest,Standardization,AdasynSampler,max_depth=15,0.939,0.939,0.94,0.939,0.968
+67,VotingClassifier,Normalization,AdasynSampler,Hard,0.937,0.937,0.936,0.936,0.968
+68,Random Forest,Normalization,AdasynSampler,max_depth=15,0.939,0.939,0.94,0.939,0.968
+69,VotingClassifier,Standardization,AdasynSampler,Hard,0.934,0.934,0.935,0.934,0.968
+70,VotingClassifier,Normalization,AdasynSampler,Soft,0.937,0.937,0.936,0.936,0.968
+71,K Neighrest Neighbors,Normalization,RandomOverSampler,"k=5, weight=distance",0.894,0.894,0.908,0.899,0.968
+72,AdaBoostClassifier,Standardization,SmoteSampler,"n_estimators=15, max_depth=15",0.939,0.939,0.939,0.939,0.967
+73,Random Forest,Normalization,AdasynSampler,max_depth=20,0.937,0.937,0.936,0.936,0.967
+74,Random Forest,Standardization,AdasynSampler,max_depth=20,0.937,0.937,0.936,0.936,0.967
+75,K Neighrest Neighbors,Standardization,RandomOverSampler,"k=5, weight=distance",0.894,0.894,0.908,0.899,0.967
+76,AdaBoostClassifier,Normalization,SmoteSampler,"n_estimators=15, max_depth=15",0.941,0.941,0.941,0.941,0.967
+77,VotingClassifier,Standardization,AdasynSampler,Soft,0.941,0.941,0.941,0.941,0.966
+78,AdaBoostClassifier,Standardization,SmoteSampler,"n_estimators=20, max_depth=20",0.939,0.939,0.938,0.939,0.966
+79,AdaBoostClassifier,Normalization,SmoteSampler,"n_estimators=20, max_depth=20",0.93,0.93,0.93,0.93,0.966
+80,K Neighrest Neighbors,Normalization,SmoteSampler,"k=5, weight=distance",0.897,0.897,0.909,0.901,0.965
+81,StackingClassifier,Standardization,AdasynSampler,"Gradient, Ada, RandomForest",0.939,0.939,0.938,0.938,0.965
+82,AdaBoostClassifier,Standardization,AdasynSampler,"n_estimators=10, max_depth=10",0.927,0.927,0.926,0.926,0.965
+83,Random Forest,Normalization,SmoteSampler,max_depth=5,0.932,0.932,0.932,0.932,0.964
+84,K Neighrest Neighbors,Standardization,SmoteSampler,"k=5, weight=distance",0.885,0.885,0.904,0.892,0.964
+85,Random Forest,Standardization,SmoteSampler,max_depth=5,0.93,0.93,0.93,0.93,0.964
+86,K Neighrest Neighbors,Standardization,RandomOverSampler,"k=10, weight=distance",0.883,0.883,0.906,0.89,0.962
+87,AdaBoostClassifier,Normalization,AdasynSampler,"n_estimators=20, max_depth=20",0.941,0.941,0.941,0.941,0.961
+88,Random Forest,Normalization,AdasynSampler,max_depth=10,0.932,0.932,0.932,0.932,0.961
+89,Random Forest,Standardization,AdasynSampler,max_depth=10,0.932,0.932,0.932,0.932,0.961
+90,K Neighrest Neighbors,Normalization,RandomOverSampler,"k=10, weight=distance",0.88,0.88,0.909,0.889,0.96
+91,AdaBoostClassifier,Standardization,AdasynSampler,"n_estimators=20, max_depth=20",0.934,0.934,0.934,0.934,0.959
+92,AdaBoostClassifier,Normalization,AdasynSampler,"n_estimators=15, max_depth=15",0.93,0.93,0.931,0.93,0.958
+93,HistGradientBoostingClassifier,Standardization,None,"max_depth=5, learning_rate=0.1",0.953,0.953,0.952,0.952,0.957
+94,K Neighrest Neighbors,Normalization,SmoteSampler,"k=10, weight=distance",0.885,0.885,0.91,0.893,0.956
+95,HistGradientBoostingClassifier,Standardization,None,"max_depth=15, learning_rate=0.1",0.946,0.946,0.945,0.946,0.956
+96,K Neighrest Neighbors,Standardization,RandomOverSampler,"k=5, weight=uniform",0.883,0.883,0.905,0.89,0.956
+97,K Neighrest Neighbors,Normalization,RandomOverSampler,"k=5, weight=uniform",0.885,0.885,0.908,0.892,0.956
+98,Decision Tree,Standardization,SmoteSampler,max_depth=20,0.913,0.913,0.917,0.915,0.956
+99,HistGradientBoostingClassifier,Standardization,None,"max_depth=10, learning_rate=0.1",0.948,0.948,0.948,0.948,0.955
+100,HistGradientBoostingClassifier,Standardization,None,"max_depth=20, learning_rate=0.1",0.946,0.946,0.945,0.946,0.955
+101,K Neighrest Neighbors,Normalization,SmoteSampler,"k=5, weight=uniform",0.885,0.885,0.909,0.893,0.954
+102,K Neighrest Neighbors,Standardization,SmoteSampler,"k=5, weight=uniform",0.876,0.876,0.902,0.884,0.954
+103,VotingClassifier,Standardization,None,Hard,0.948,0.948,0.947,0.947,0.953
+104,K Neighrest Neighbors,Standardization,SmoteSampler,"k=10, weight=distance",0.876,0.876,0.902,0.884,0.953
+105,Decision Tree,Standardization,SmoteSampler,max_depth=15,0.92,0.92,0.923,0.921,0.953
+106,VotingClassifier,Standardization,None,Soft,0.944,0.944,0.942,0.942,0.951
+107,Decision Tree,Standardization,SmoteSampler,max_depth=10,0.915,0.915,0.917,0.916,0.951
+108,Decision Tree,Normalization,SmoteSampler,max_depth=10,0.915,0.915,0.916,0.916,0.951
+109,Decision Tree,Normalization,SmoteSampler,max_depth=15,0.911,0.911,0.914,0.912,0.951
+110,GradientBoostingClassifier,Normalization,RandomOverSampler,"n_estimators=30, learning_rate=0.1",0.906,0.906,0.921,0.911,0.951
+111,GradientBoostingClassifier,Standardization,RandomOverSampler,"n_estimators=30, learning_rate=0.1",0.906,0.906,0.921,0.911,0.951
+112,GradientBoostingClassifier,Normalization,SmoteSampler,"n_estimators=30, learning_rate=0.1",0.904,0.904,0.913,0.907,0.951
+113,Decision Tree,Normalization,SmoteSampler,max_depth=20,0.915,0.915,0.917,0.916,0.951
+114,GradientBoostingClassifier,Standardization,SmoteSampler,"n_estimators=30, learning_rate=0.1",0.904,0.904,0.913,0.907,0.95
+115,Random Forest,Normalization,AdasynSampler,max_depth=5,0.911,0.911,0.912,0.911,0.95
+116,Random Forest,Standardization,AdasynSampler,max_depth=5,0.911,0.911,0.911,0.911,0.95
+117,AdaBoostClassifier,Standardization,AdasynSampler,"n_estimators=15, max_depth=15",0.927,0.927,0.927,0.927,0.95
+118,SVM,Standardization,SmoteSampler,kernel=rbf,0.873,0.873,0.901,0.882,0.948
+119,GradientBoostingClassifier,Standardization,None,"n_estimators=30, learning_rate=0.1",0.944,0.944,0.942,0.941,0.945
+120,AdaBoostClassifier,Normalization,RandomOverSampler,"n_estimators=5, max_depth=5",0.932,0.932,0.934,0.932,0.944
+121,AdaBoostClassifier,Standardization,RandomOverSampler,"n_estimators=5, max_depth=5",0.932,0.932,0.934,0.932,0.944
+122,K Neighrest Neighbors,Standardization,SmoteSampler,"k=10, weight=uniform",0.876,0.876,0.903,0.884,0.944
+123,SVM,Normalization,SmoteSampler,kernel=poly,0.883,0.883,0.904,0.89,0.943
+124,StackingClassifier,Standardization,None,"Gradient, Ada, RandomForest",0.939,0.939,0.937,0.938,0.942
+125,K Neighrest Neighbors,Normalization,SmoteSampler,"k=10, weight=uniform",0.871,0.871,0.895,0.879,0.941
+126,AdaBoostClassifier,Standardization,None,"n_estimators=15, max_depth=15",0.934,0.934,0.932,0.932,0.938
+127,AdaBoostClassifier,Standardization,None,"n_estimators=10, max_depth=10",0.939,0.939,0.938,0.938,0.938
+128,AdaBoostClassifier,Standardization,None,"n_estimators=100, max_depth=100",0.93,0.93,0.928,0.928,0.937
+129,Decision Tree,Normalization,AdasynSampler,max_depth=20,0.92,0.92,0.921,0.92,0.936
+130,Decision Tree,Standardization,AdasynSampler,max_depth=20,0.915,0.915,0.914,0.915,0.936
+131,Decision Tree,Standardization,AdasynSampler,max_depth=15,0.92,0.92,0.92,0.92,0.936
+132,Decision Tree,Normalization,AdasynSampler,max_depth=15,0.92,0.92,0.919,0.92,0.936
+133,SVM,Standardization,SmoteSampler,kernel=poly,0.859,0.859,0.901,0.872,0.936
+134,GradientBoostingClassifier,Standardization,RandomOverSampler,"n_estimators=15, learning_rate=0.1",0.892,0.892,0.918,0.9,0.935
+135,GradientBoostingClassifier,Normalization,RandomOverSampler,"n_estimators=15, learning_rate=0.1",0.892,0.892,0.918,0.9,0.935
+136,GradientBoostingClassifier,Standardization,None,"n_estimators=15, learning_rate=0.1",0.937,0.937,0.937,0.933,0.934
+137,GradientBoostingClassifier,Normalization,AdasynSampler,"n_estimators=30, learning_rate=0.1",0.899,0.899,0.911,0.903,0.934
+138,GradientBoostingClassifier,Standardization,AdasynSampler,"n_estimators=30, learning_rate=0.1",0.899,0.899,0.911,0.903,0.934
+139,Decision Tree,Standardization,None,max_depth=10,0.93,0.93,0.927,0.928,0.933
+140,Random Forest,Standardization,None,n_estimators=15,0.934,0.934,0.933,0.932,0.933
+141,Random Forest,Standardization,None,n_estimators=20,0.923,0.923,0.92,0.92,0.932
+142,K Neighrest Neighbors,Standardization,RandomOverSampler,"k=10, weight=uniform",0.876,0.876,0.9,0.883,0.932
+143,SVM,Standardization,RandomOverSampler,kernel=poly,0.873,0.873,0.909,0.884,0.931
+144,GradientBoostingClassifier,Normalization,RandomOverSampler,"n_estimators=10, learning_rate=0.1",0.883,0.883,0.912,0.891,0.931
+145,GradientBoostingClassifier,Standardization,RandomOverSampler,"n_estimators=10, learning_rate=0.1",0.883,0.883,0.912,0.891,0.931
+146,GradientBoostingClassifier,Normalization,SmoteSampler,"n_estimators=15, learning_rate=0.1",0.869,0.869,0.892,0.876,0.931
+147,SVM,Standardization,RandomOverSampler,kernel=rbf,0.876,0.876,0.91,0.886,0.931
+148,GradientBoostingClassifier,Standardization,SmoteSampler,"n_estimators=15, learning_rate=0.1",0.869,0.869,0.892,0.876,0.931
+149,SVM,Normalization,RandomOverSampler,kernel=poly,0.873,0.873,0.898,0.882,0.93
+150,Decision Tree,Normalization,AdasynSampler,max_depth=10,0.897,0.897,0.905,0.9,0.929
+151,K Neighrest Neighbors,Standardization,AdasynSampler,"k=5, weight=distance",0.892,0.892,0.91,0.898,0.929
+152,K Neighrest Neighbors,Normalization,AdasynSampler,"k=5, weight=distance",0.892,0.892,0.91,0.898,0.929
+153,Random Forest,Standardization,None,n_estimators=10,0.925,0.925,0.923,0.922,0.928
+154,Decision Tree,Standardization,AdasynSampler,max_depth=10,0.899,0.899,0.906,0.902,0.928
+155,K Neighrest Neighbors,Normalization,RandomOverSampler,"k=10, weight=uniform",0.866,0.866,0.902,0.877,0.928
+156,GradientBoostingClassifier,Normalization,SmoteSampler,"n_estimators=10, learning_rate=0.1",0.864,0.864,0.889,0.872,0.927
+157,GradientBoostingClassifier,Standardization,SmoteSampler,"n_estimators=10, learning_rate=0.1",0.864,0.864,0.889,0.872,0.927
+158,Decision Tree,Standardization,None,max_depth=20,0.946,0.946,0.945,0.945,0.926
+159,SVM,Normalization,SmoteSampler,kernel=rbf,0.857,0.857,0.893,0.868,0.925
+160,SVM,Normalization,AdasynSampler,kernel=poly,0.885,0.885,0.903,0.891,0.925
+161,Decision Tree,Standardization,None,max_depth=15,0.927,0.927,0.926,0.926,0.925
+162,GradientBoostingClassifier,Standardization,None,"n_estimators=10, learning_rate=0.1",0.93,0.93,0.931,0.925,0.922
+163,K Neighrest Neighbors,Standardization,AdasynSampler,"k=10, weight=distance",0.864,0.864,0.903,0.876,0.922
+164,Random Forest,Standardization,None,n_estimators=5,0.906,0.906,0.902,0.903,0.921
+165,Decision Tree,Standardization,None,max_depth=5,0.918,0.918,0.916,0.912,0.921
+166,K Neighrest Neighbors,Normalization,AdasynSampler,"k=10, weight=distance",0.887,0.887,0.914,0.896,0.921
+167,GradientBoostingClassifier,Normalization,SmoteSampler,"n_estimators=5, learning_rate=0.1",0.859,0.859,0.888,0.869,0.919
+168,AdaBoostClassifier,Standardization,None,"n_estimators=5, max_depth=5",0.92,0.92,0.919,0.919,0.919
+169,GradientBoostingClassifier,Standardization,SmoteSampler,"n_estimators=5, learning_rate=0.1",0.859,0.859,0.888,0.869,0.919
+170,AdaBoostClassifier,Normalization,SmoteSampler,"n_estimators=5, max_depth=5",0.862,0.862,0.866,0.863,0.918
+171,AdaBoostClassifier,Standardization,SmoteSampler,"n_estimators=5, max_depth=5",0.864,0.864,0.867,0.865,0.917
+172,K Neighrest Neighbors,Normalization,AdasynSampler,"k=5, weight=uniform",0.883,0.883,0.909,0.891,0.914
+173,GradientBoostingClassifier,Standardization,RandomOverSampler,"n_estimators=5, learning_rate=0.1",0.878,0.878,0.91,0.887,0.912
+174,GradientBoostingClassifier,Normalization,RandomOverSampler,"n_estimators=5, learning_rate=0.1",0.878,0.878,0.91,0.887,0.912
+175,SVM,Standardization,AdasynSampler,kernel=rbf,0.857,0.857,0.886,0.867,0.912
+176,SVM,Standardization,AdasynSampler,kernel=poly,0.847,0.847,0.886,0.86,0.912
+177,SVM,Normalization,RandomOverSampler,kernel=rbf,0.864,0.864,0.903,0.875,0.911
+178,K Neighrest Neighbors,Standardization,AdasynSampler,"k=5, weight=uniform",0.876,0.876,0.903,0.884,0.911
+179,VotingClassifier,Normalization,RandomUnderSampler,Soft,0.847,0.847,0.881,0.857,0.91
+180,K Neighrest Neighbors,Standardization,None,"k=5, weight=distance",0.904,0.904,0.9,0.901,0.91
+181,GradientBoostingClassifier,Normalization,AdasynSampler,"n_estimators=15, learning_rate=0.1",0.857,0.857,0.888,0.866,0.909
+182,AdaBoostClassifier,Normalization,AdasynSampler,"n_estimators=5, max_depth=5",0.84,0.84,0.872,0.851,0.909
+183,Decision Tree,Normalization,RandomOverSampler,max_depth=5,0.887,0.887,0.895,0.89,0.909
+184,Decision Tree,Standardization,RandomOverSampler,max_depth=5,0.892,0.892,0.901,0.895,0.909
+185,GradientBoostingClassifier,Standardization,AdasynSampler,"n_estimators=15, learning_rate=0.1",0.857,0.857,0.888,0.866,0.909
+186,SVM,Standardization,None,kernel=rbf,0.901,0.901,0.898,0.898,0.908
+187,VotingClassifier,Standardization,RandomUnderSampler,Soft,0.854,0.854,0.894,0.865,0.908
+188,GradientBoostingClassifier,Standardization,RandomUnderSampler,"n_estimators=30, learning_rate=0.1",0.836,0.836,0.876,0.847,0.908
+189,GradientBoostingClassifier,Normalization,RandomUnderSampler,"n_estimators=30, learning_rate=0.1",0.838,0.838,0.877,0.849,0.908
+190,K Neighrest Neighbors,Standardization,AdasynSampler,"k=10, weight=uniform",0.862,0.862,0.902,0.873,0.908
+191,AdaBoostClassifier,Standardization,AdasynSampler,"n_estimators=5, max_depth=5",0.845,0.845,0.878,0.856,0.907
+192,SVM,Normalization,AdasynSampler,kernel=rbf,0.85,0.85,0.888,0.862,0.906
+193,K Neighrest Neighbors,Normalization,AdasynSampler,"k=10, weight=uniform",0.876,0.876,0.905,0.885,0.906
+194,VotingClassifier,Normalization,RandomUnderSampler,Hard,0.852,0.852,0.884,0.861,0.905
+195,SVM,Standardization,SmoteSampler,kernel=linear,0.871,0.871,0.897,0.88,0.903
+196,VotingClassifier,Standardization,RandomUnderSampler,Hard,0.854,0.854,0.886,0.863,0.903
+197,Decision Tree,Normalization,SmoteSampler,max_depth=5,0.892,0.892,0.899,0.895,0.903
+198,Decision Tree,Standardization,SmoteSampler,max_depth=5,0.89,0.89,0.898,0.893,0.903
+199,HistGradientBoostingClassifier,Standardization,RandomUnderSampler,"max_depth=5, learning_rate=0.1",0.871,0.871,0.896,0.878,0.901
+200,HistGradientBoostingClassifier,Normalization,RandomUnderSampler,"max_depth=5, learning_rate=0.1",0.871,0.871,0.896,0.878,0.901
+201,K Neighrest Neighbors,Standardization,None,"k=5, weight=uniform",0.897,0.897,0.892,0.893,0.9
+202,K Neighrest Neighbors,Standardization,None,"k=10, weight=distance",0.904,0.904,0.9,0.9,0.9
+203,GradientBoostingClassifier,Standardization,AdasynSampler,"n_estimators=10, learning_rate=0.1",0.847,0.847,0.883,0.858,0.899
+204,GradientBoostingClassifier,Normalization,AdasynSampler,"n_estimators=10, learning_rate=0.1",0.847,0.847,0.883,0.858,0.899
+205,HistGradientBoostingClassifier,Standardization,RandomUnderSampler,"max_depth=20, learning_rate=0.1",0.871,0.871,0.897,0.878,0.898
+206,HistGradientBoostingClassifier,Standardization,RandomUnderSampler,"max_depth=15, learning_rate=0.1",0.871,0.871,0.897,0.878,0.898
+207,HistGradientBoostingClassifier,Normalization,RandomUnderSampler,"max_depth=20, learning_rate=0.1",0.871,0.871,0.897,0.878,0.898
+208,HistGradientBoostingClassifier,Normalization,RandomUnderSampler,"max_depth=15, learning_rate=0.1",0.871,0.871,0.897,0.878,0.898
+209,SVM,Standardization,None,kernel=linear,0.899,0.899,0.897,0.897,0.897
+210,HistGradientBoostingClassifier,Standardization,RandomUnderSampler,"max_depth=10, learning_rate=0.1",0.864,0.864,0.892,0.871,0.895
+211,HistGradientBoostingClassifier,Normalization,RandomUnderSampler,"max_depth=10, learning_rate=0.1",0.864,0.864,0.892,0.871,0.895
+212,SVM,Standardization,None,kernel=poly,0.894,0.894,0.889,0.888,0.892
+213,Logistic Regression,Standardization,SmoteSampler,l2 regurlization,0.852,0.852,0.882,0.862,0.892
+214,Logistic Regression,Standardization,None,l1 regurlization,0.892,0.892,0.891,0.891,0.891
+215,GradientBoostingClassifier,Standardization,RandomUnderSampler,"n_estimators=15, learning_rate=0.1",0.824,0.824,0.876,0.836,0.89
+216,GradientBoostingClassifier,Normalization,RandomUnderSampler,"n_estimators=15, learning_rate=0.1",0.822,0.822,0.875,0.834,0.89
+217,StackingClassifier,Normalization,RandomUnderSampler,"Gradient, Ada, RandomForest",0.843,0.843,0.891,0.854,0.89
+218,Logistic Regression,Standardization,None,l2 regurlization,0.89,0.89,0.888,0.889,0.889
+219,SVM,Normalization,SmoteSampler,kernel=linear,0.845,0.845,0.886,0.857,0.887
+220,K Neighrest Neighbors,Standardization,None,"k=10, weight=uniform",0.899,0.899,0.896,0.893,0.886
+221,GradientBoostingClassifier,Standardization,AdasynSampler,"n_estimators=5, learning_rate=0.1",0.824,0.824,0.869,0.837,0.886
+222,GradientBoostingClassifier,Normalization,AdasynSampler,"n_estimators=5, learning_rate=0.1",0.824,0.824,0.869,0.837,0.886
+223,Random Forest,Normalization,RandomUnderSampler,max_depth=20,0.871,0.871,0.895,0.877,0.883
+224,GradientBoostingClassifier,Standardization,RandomUnderSampler,"n_estimators=5, learning_rate=0.1",0.84,0.84,0.885,0.852,0.883
+225,GradientBoostingClassifier,Normalization,RandomUnderSampler,"n_estimators=5, learning_rate=0.1",0.84,0.84,0.885,0.852,0.883
+226,GradientBoostingClassifier,Normalization,RandomUnderSampler,"n_estimators=10, learning_rate=0.1",0.812,0.812,0.872,0.827,0.883
+227,GradientBoostingClassifier,Standardization,RandomUnderSampler,"n_estimators=10, learning_rate=0.1",0.815,0.815,0.874,0.83,0.883
+228,Logistic Regression,Standardization,SmoteSampler,l1 regurlization,0.857,0.857,0.891,0.867,0.882
+229,Logistic Regression,Normalization,SmoteSampler,l2 regurlization,0.847,0.847,0.883,0.858,0.881
+230,Random Forest,Standardization,RandomUnderSampler,max_depth=20,0.876,0.876,0.898,0.882,0.88
+231,SVM,Standardization,AdasynSampler,kernel=linear,0.859,0.859,0.889,0.869,0.88
+232,AdaBoostClassifier,Normalization,RandomUnderSampler,"n_estimators=15, max_depth=15",0.803,0.803,0.86,0.817,0.88
+233,Logistic Regression,Normalization,SmoteSampler,l1 regurlization,0.85,0.85,0.885,0.861,0.88
+234,StackingClassifier,Standardization,RandomUnderSampler,"Gradient, Ada, RandomForest",0.859,0.859,0.894,0.868,0.878
+235,Decision Tree,Standardization,RandomUnderSampler,max_depth=10,0.805,0.805,0.872,0.823,0.876
+236,Decision Tree,Standardization,AdasynSampler,max_depth=5,0.817,0.817,0.868,0.832,0.876
+237,Decision Tree,Normalization,AdasynSampler,max_depth=5,0.824,0.824,0.871,0.839,0.876
+238,Random Forest,Standardization,RandomUnderSampler,max_depth=15,0.876,0.876,0.904,0.883,0.875
+239,SVM,Normalization,RandomOverSampler,kernel=linear,0.84,0.84,0.883,0.853,0.874
+240,GradientBoostingClassifier,Standardization,None,"n_estimators=5, learning_rate=0.1",0.878,0.878,0.891,0.859,0.874
+241,SVM,Standardization,RandomOverSampler,kernel=linear,0.843,0.843,0.881,0.855,0.874
+242,Logistic Regression,Standardization,AdasynSampler,l2 regurlization,0.838,0.838,0.87,0.849,0.873
+243,AdaBoostClassifier,Normalization,RandomUnderSampler,"n_estimators=20, max_depth=20",0.798,0.798,0.857,0.815,0.873
+244,Random Forest,Normalization,RandomUnderSampler,max_depth=15,0.876,0.876,0.904,0.883,0.872
+245,Decision Tree,Normalization,RandomUnderSampler,max_depth=20,0.812,0.812,0.871,0.828,0.871
+246,Decision Tree,Standardization,RandomUnderSampler,max_depth=20,0.805,0.805,0.87,0.821,0.871
+247,AdaBoostClassifier,Standardization,RandomUnderSampler,"n_estimators=5, max_depth=5",0.815,0.815,0.877,0.829,0.869
+248,AdaBoostClassifier,Standardization,RandomUnderSampler,"n_estimators=15, max_depth=15",0.815,0.815,0.873,0.83,0.868
+249,AdaBoostClassifier,Normalization,RandomUnderSampler,"n_estimators=10, max_depth=10",0.878,0.878,0.894,0.884,0.868
+250,Decision Tree,Standardization,RandomUnderSampler,max_depth=15,0.784,0.784,0.865,0.804,0.868
+251,Decision Tree,Normalization,RandomUnderSampler,max_depth=10,0.805,0.805,0.863,0.821,0.868
+252,Decision Tree,Normalization,RandomUnderSampler,max_depth=15,0.826,0.826,0.873,0.84,0.865
+253,Logistic Regression,Standardization,RandomOverSampler,l2 regurlization,0.847,0.847,0.88,0.858,0.864
+254,SVM,Normalization,AdasynSampler,kernel=linear,0.817,0.817,0.867,0.833,0.864
+255,AdaBoostClassifier,Normalization,RandomUnderSampler,"n_estimators=5, max_depth=5",0.826,0.826,0.887,0.84,0.863
+256,AdaBoostClassifier,Standardization,RandomUnderSampler,"n_estimators=20, max_depth=20",0.812,0.812,0.874,0.828,0.863
+257,Random Forest,Standardization,RandomUnderSampler,max_depth=10,0.864,0.864,0.897,0.873,0.862
+258,Logistic Regression,Normalization,RandomOverSampler,l2 regurlization,0.843,0.843,0.882,0.854,0.861
+259,Random Forest,Normalization,RandomUnderSampler,max_depth=10,0.862,0.862,0.896,0.87,0.86
+260,SVM,Normalization,RandomUnderSampler,kernel=rbf,0.824,0.824,0.88,0.839,0.86
+261,Logistic Regression,Standardization,RandomOverSampler,l1 regurlization,0.84,0.84,0.88,0.853,0.858
+262,Logistic Regression,Normalization,RandomOverSampler,l1 regurlization,0.843,0.843,0.885,0.855,0.858
+263,Decision Tree,Normalization,RandomUnderSampler,max_depth=5,0.798,0.798,0.859,0.818,0.851
+264,SVM,Normalization,RandomUnderSampler,kernel=linear,0.812,0.812,0.867,0.828,0.85
+265,K Neighrest Neighbors,Standardization,RandomUnderSampler,"k=5, weight=distance",0.826,0.826,0.881,0.841,0.847
+266,Logistic Regression,Normalization,AdasynSampler,l2 regurlization,0.817,0.817,0.868,0.832,0.847
+267,Logistic Regression,Standardization,AdasynSampler,l1 regurlization,0.847,0.847,0.882,0.858,0.847
+268,K Neighrest Neighbors,Standardization,RandomUnderSampler,"k=5, weight=uniform",0.822,0.822,0.878,0.838,0.847
+269,AdaBoostClassifier,Standardization,RandomUnderSampler,"n_estimators=10, max_depth=10",0.862,0.862,0.896,0.871,0.846
+270,K Neighrest Neighbors,Normalization,RandomUnderSampler,"k=5, weight=distance",0.817,0.817,0.87,0.832,0.844
+271,K Neighrest Neighbors,Normalization,RandomUnderSampler,"k=5, weight=uniform",0.815,0.815,0.867,0.831,0.842
+272,K Neighrest Neighbors,Standardization,RandomUnderSampler,"k=10, weight=distance",0.817,0.817,0.873,0.833,0.842
+273,K Neighrest Neighbors,Normalization,RandomUnderSampler,"k=10, weight=uniform",0.826,0.826,0.873,0.84,0.841
+274,SVM,Normalization,RandomUnderSampler,kernel=poly,0.843,0.843,0.888,0.856,0.841
+275,Logistic Regression,Normalization,RandomUnderSampler,l1 regurlization,0.817,0.817,0.868,0.831,0.84
+276,K Neighrest Neighbors,Normalization,RandomUnderSampler,"k=10, weight=distance",0.817,0.817,0.871,0.832,0.84
+277,Logistic Regression,Normalization,AdasynSampler,l1 regurlization,0.843,0.843,0.88,0.854,0.839
+278,Logistic Regression,Normalization,RandomUnderSampler,l2 regurlization,0.81,0.81,0.867,0.826,0.838
+279,SVM,Standardization,RandomUnderSampler,kernel=rbf,0.829,0.829,0.884,0.844,0.837
+280,Random Forest,Normalization,RandomUnderSampler,max_depth=5,0.826,0.826,0.88,0.84,0.835
+281,Decision Tree,Standardization,RandomUnderSampler,max_depth=5,0.798,0.798,0.859,0.818,0.833
+282,SVM,Standardization,RandomUnderSampler,kernel=poly,0.824,0.824,0.887,0.842,0.832
+283,Random Forest,Standardization,RandomUnderSampler,max_depth=5,0.831,0.831,0.883,0.845,0.83
+284,K Neighrest Neighbors,Standardization,RandomUnderSampler,"k=10, weight=uniform",0.819,0.819,0.872,0.835,0.826
+285,Logistic Regression,Standardization,RandomUnderSampler,l2 regurlization,0.829,0.829,0.874,0.842,0.824
+286,Logistic Regression,Standardization,RandomUnderSampler,l1 regurlization,0.84,0.84,0.88,0.852,0.824
+287,SVM,Standardization,RandomUnderSampler,kernel=sigmoid,0.803,0.803,0.863,0.82,0.821
+288,Naive Bayes,Standardization,None,Bernoulli,0.798,0.798,0.851,0.814,0.817
+289,SVM,Standardization,RandomUnderSampler,kernel=linear,0.822,0.822,0.869,0.836,0.807
+290,SVM,Standardization,None,kernel=sigmoid,0.761,0.761,0.753,0.756,0.799
+291,Naive Bayes,Standardization,None,Gaussian,0.711,0.711,0.861,0.747,0.779
+292,Naive Bayes,Normalization,RandomUnderSampler,Gaussian,0.796,0.796,0.859,0.815,0.768
+293,SVM,Standardization,SmoteSampler,kernel=sigmoid,0.756,0.756,0.83,0.778,0.767
+294,Naive Bayes,Standardization,RandomUnderSampler,Gaussian,0.803,0.803,0.864,0.821,0.767
+295,Naive Bayes,Normalization,SmoteSampler,Gaussian,0.742,0.742,0.863,0.773,0.765
+296,Naive Bayes,Standardization,SmoteSampler,Gaussian,0.735,0.735,0.862,0.767,0.763
+297,SVM,Standardization,RandomOverSampler,kernel=sigmoid,0.796,0.796,0.859,0.815,0.761
+298,Naive Bayes,Normalization,RandomOverSampler,Gaussian,0.704,0.704,0.855,0.74,0.759
+299,Naive Bayes,Normalization,SmoteSampler,Multinomial,0.749,0.749,0.848,0.777,0.758
+300,Naive Bayes,Normalization,RandomOverSampler,Multinomial,0.742,0.742,0.846,0.771,0.757
+301,Naive Bayes,Standardization,RandomOverSampler,Gaussian,0.697,0.697,0.857,0.734,0.753
+302,Naive Bayes,Standardization,SmoteSampler,Bernoulli,0.697,0.697,0.834,0.729,0.752
+303,Naive Bayes,Normalization,RandomUnderSampler,Multinomial,0.723,0.723,0.833,0.753,0.748
+304,Naive Bayes,Normalization,RandomUnderSampler,Complement,0.676,0.676,0.821,0.713,0.746
+305,Naive Bayes,Standardization,RandomOverSampler,Bernoulli,0.678,0.678,0.833,0.713,0.743
+306,Naive Bayes,Normalization,SmoteSampler,Complement,0.714,0.714,0.835,0.746,0.74
+307,Naive Bayes,Standardization,RandomUnderSampler,Bernoulli,0.678,0.678,0.833,0.713,0.739
+308,Naive Bayes,Normalization,RandomOverSampler,Complement,0.704,0.704,0.833,0.738,0.736
+309,Naive Bayes,Normalization,RandomUnderSampler,Bernoulli,0.723,0.723,0.811,0.75,0.72
+310,SVM,Standardization,AdasynSampler,kernel=sigmoid,0.707,0.707,0.794,0.735,0.716
+311,Naive Bayes,Normalization,SmoteSampler,Bernoulli,0.718,0.718,0.812,0.746,0.715
+312,Naive Bayes,Normalization,RandomOverSampler,Bernoulli,0.735,0.735,0.817,0.761,0.711
+313,Naive Bayes,Normalization,AdasynSampler,Complement,0.779,0.779,0.853,0.801,0.699
+314,Naive Bayes,Standardization,AdasynSampler,Bernoulli,0.718,0.718,0.841,0.746,0.686
+315,Naive Bayes,Normalization,AdasynSampler,Multinomial,0.758,0.758,0.851,0.786,0.686
+316,Naive Bayes,Normalization,AdasynSampler,Gaussian,0.669,0.669,0.86,0.712,0.684
+317,Naive Bayes,Standardization,AdasynSampler,Gaussian,0.646,0.646,0.86,0.693,0.674
+318,Naive Bayes,Normalization,AdasynSampler,Bernoulli,0.702,0.702,0.81,0.734,0.643
+319,SVM,Normalization,RandomUnderSampler,kernel=sigmoid,0.39,0.39,0.685,0.453,0.486
+320,SVM,Normalization,SmoteSampler,kernel=sigmoid,0.474,0.474,0.71,0.551,0.471
+321,SVM,Normalization,RandomOverSampler,kernel=sigmoid,0.469,0.469,0.713,0.547,0.466
+322,SVM,Normalization,AdasynSampler,kernel=sigmoid,0.462,0.462,0.697,0.539,0.426

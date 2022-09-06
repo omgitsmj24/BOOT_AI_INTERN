@@ -1,0 +1,38 @@
+,Model,Details,Accuracy,Recall,Precision,F1 Score,5-Fold Cross Validation
+0,HistGradientBoostingClassifier,"max_depth=15, learning_rate=0.1",0.937,0.937,0.936,0.936,0.977
+1,HistGradientBoostingClassifier,"max_depth=20, learning_rate=0.1",0.939,0.939,0.938,0.939,0.976
+2,HistGradientBoostingClassifier,"max_depth=10, learning_rate=0.1",0.939,0.939,0.938,0.939,0.975
+3,HistGradientBoostingClassifier,"max_depth=5, learning_rate=0.1",0.939,0.939,0.938,0.939,0.973
+4,AdaBoostClassifier,"n_estimators=10, max_depth=10",0.953,0.953,0.952,0.952,0.971
+5,StackingClassifier,"Gradient, Ada, RandomForest",0.932,0.932,0.93,0.93,0.969
+6,VotingClassifier,Soft,0.937,0.937,0.936,0.936,0.968
+7,VotingClassifier,Hard,0.937,0.937,0.936,0.936,0.968
+8,Random Forest,max_depth=15,0.939,0.939,0.94,0.939,0.968
+9,Random Forest,max_depth=20,0.937,0.937,0.936,0.936,0.967
+10,Random Forest,max_depth=10,0.932,0.932,0.932,0.932,0.961
+11,AdaBoostClassifier,"n_estimators=20, max_depth=20",0.941,0.941,0.941,0.941,0.961
+12,AdaBoostClassifier,"n_estimators=15, max_depth=15",0.93,0.93,0.931,0.93,0.958
+13,Random Forest,max_depth=5,0.911,0.911,0.912,0.911,0.95
+14,Decision Tree,max_depth=15,0.92,0.92,0.919,0.92,0.936
+15,Decision Tree,max_depth=20,0.92,0.92,0.921,0.92,0.936
+16,GradientBoostingClassifier,"n_estimators=30, learning_rate=0.1",0.899,0.899,0.911,0.903,0.934
+17,K Neighrest Neighbors,"k=5, weight=distance",0.892,0.892,0.91,0.898,0.929
+18,Decision Tree,max_depth=10,0.897,0.897,0.905,0.9,0.929
+19,SVM,kernel=poly,0.885,0.885,0.903,0.891,0.925
+20,K Neighrest Neighbors,"k=10, weight=distance",0.887,0.887,0.914,0.896,0.921
+21,K Neighrest Neighbors,"k=5, weight=uniform",0.883,0.883,0.909,0.891,0.914
+22,GradientBoostingClassifier,"n_estimators=15, learning_rate=0.1",0.857,0.857,0.888,0.866,0.909
+23,AdaBoostClassifier,"n_estimators=5, max_depth=5",0.84,0.84,0.872,0.851,0.909
+24,K Neighrest Neighbors,"k=10, weight=uniform",0.876,0.876,0.905,0.885,0.906
+25,SVM,kernel=rbf,0.85,0.85,0.888,0.862,0.906
+26,GradientBoostingClassifier,"n_estimators=10, learning_rate=0.1",0.847,0.847,0.883,0.858,0.899
+27,GradientBoostingClassifier,"n_estimators=5, learning_rate=0.1",0.824,0.824,0.869,0.837,0.886
+28,Decision Tree,max_depth=5,0.824,0.824,0.871,0.839,0.876
+29,SVM,kernel=linear,0.817,0.817,0.867,0.833,0.864
+30,Logistic Regression,l2 regurlization,0.817,0.817,0.868,0.832,0.847
+31,Logistic Regression,l1 regurlization,0.843,0.843,0.88,0.854,0.839
+32,Naive Bayes,Complement,0.779,0.779,0.853,0.801,0.699
+33,Naive Bayes,Multinomial,0.758,0.758,0.851,0.786,0.686
+34,Naive Bayes,Gaussian,0.669,0.669,0.86,0.712,0.684
+35,Naive Bayes,Bernoulli,0.702,0.702,0.81,0.734,0.643
+36,SVM,kernel=sigmoid,0.462,0.462,0.697,0.539,0.426
