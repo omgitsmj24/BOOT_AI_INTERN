@@ -152,7 +152,7 @@ def data_fusion(X, weights, units, time, window_size):
     return fused_data
 
 
-def scoring(train_data, unit_sample, reg_model_lib, sample_len, polynomial_deg=7):
+def scoring(train_data, unit_sample, reg_model_lib, sample_len, polynomial_deg):
     """
     This function calculate similarity score for each reg_model to 
     query sample
@@ -223,7 +223,7 @@ def estimate_rul(selected_units, train_data, sample_len):
     return predict_RUL
 
 
-def predict(train_data, val_fused_data, cutpoint, reg_model_lib, break_point=0, model='linear', NEIGHBORS_NUM=50, polynomial_deg=7):
+def predict(train_data, val_fused_data, cutpoint, reg_model_lib, break_point=0, model='linear', NEIGHBORS_NUM=50, polynomial_deg=2):
     """
     This function return loss of a query sample predicted RUL from its neighbors
     Params:
@@ -251,10 +251,7 @@ def predict(train_data, val_fused_data, cutpoint, reg_model_lib, break_point=0, 
 
         true_RUL = len(unit_sample) - true_RUL_point
         
-        if model == 'linear':
-            scores_dict = scoring_linear_reg(train_data, unit_sample, reg_model_lib, sample_len=true_RUL_point, polynomial_deg=polynomial_deg)
-        else:
-            scores_dict = scoring(train_data, unit_sample, reg_model_lib, sample_len=true_RUL_point, polynomial_deg=polynomial_deg)
+        scores_dict = scoring(train_data, unit_sample, reg_model_lib, sample_len=true_RUL_point, polynomial_deg=polynomial_deg)
 
         # sort similarity score asc
         sorted_scores = dict(sorted(scores_dict.items(), key=lambda item: item[1], reverse=True))
@@ -473,7 +470,6 @@ def SlopeRanker(data, data_variables, nsample):
     signalSlope = np.zeros(numSensors)
     Final_Result = np.zeros(numSensors)
     for ct in range (numSensors):
-        sum = []
         for i in range (1, 1 + nsample): 
             lr = LinearRegression()
             y = data[data.Unit == i][data_variables[ct]]
@@ -485,12 +481,6 @@ def SlopeRanker(data, data_variables, nsample):
             lr.fit(X,y)
             signalSlope[ct] += abs(lr.coef_)  
             Final_Result[ct] = signalSlope[ct] / nsample
-            # print(f'Sensor {ct+1} in machine {i} has slope: {signalSlope[ct]}')
-        # print('-')
-        # print(f'Sensor {ct+1} has slope: {Final_Result[ct]}')
-        # print('----------------------------------------')
-    
-    # signalSlope.sort()
     return Final_Result
 
     
