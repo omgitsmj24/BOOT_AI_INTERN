@@ -73,7 +73,7 @@ def normalize_data(clustered_data, selected_cols):
     for label in range(num_cluster):
         cluster_data = clustered_data[clustered_data.label == label]
         normalized_data.loc[clustered_data.label == label, selected_cols] = (cluster_data[selected_cols] - mean_df.iloc[
-            label]) / std_df.iloc[label]
+            label]) / (std_df.iloc[label]+ 10**-100)
 
     # fill nan and inf values with 0
     normalized_data.replace([np.inf, -np.inf], np.nan, inplace=True)
@@ -454,5 +454,43 @@ def get_loss(train_data, val_fused_data, reg_model_lib, polynomial_deg, NEIGHBOR
     loss_df['Pred RUL 90'] = pred_90
     loss_df['Sample 90%'] = loss_90
     return loss_df
+
+def SlopeRanker(data, data_variables, nsample):
+    
+    """ 
+    This function ranks the important of sensors by measuring the slope of each 
+    sensor data output signal and rank them with the highest being the most important
+    
+    Params:
+        data (DataFrame): Input scaled data
+        data_variables (DataFrame): specific sensors to calculate slope and rank
+        nsample (int): number of machine to calculate slope
+    Return: 
+        Final_Results (DataFrame): a DataFrame with slope calculated and sorted from highest to lowest
+    """
+    
+    numSensors = len(data_variables)
+    signalSlope = np.zeros(numSensors)
+    Final_Result = np.zeros(numSensors)
+    for ct in range (numSensors):
+        sum = []
+        for i in range (1, 1 + nsample): 
+            lr = LinearRegression()
+            y = data[data.Unit == i][data_variables[ct]]
+            y = y.values
+            y = y.reshape(-1,1)
+            X = data[data.Unit == i].Timestep
+            X = X.values
+            X = X.reshape(-1,1)
+            lr.fit(X,y)
+            signalSlope[ct] += abs(lr.coef_)  
+            Final_Result[ct] = signalSlope[ct] / nsample
+            # print(f'Sensor {ct+1} in machine {i} has slope: {signalSlope[ct]}')
+        # print('-')
+        # print(f'Sensor {ct+1} has slope: {Final_Result[ct]}')
+        # print('----------------------------------------')
+    
+    # signalSlope.sort()
+    return Final_Result
 
     
